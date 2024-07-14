@@ -1,10 +1,78 @@
-h1 {
+body {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  background-color: black;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-p {
-  font-family: "Lora", serif;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/senja.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  color: #f0f8ff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 86px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 5px;
   font-weight: 400;
+}
+
+header a {
+  background-color: #f0f8ff;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+  margin-top: 32px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+}
+
+footer {
+  color: #f0f8ff;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 100px 0;
+  }
+  header h1 {
+    font-size: 43px;
+  }
+  header h2 {
+    font-size: 10px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header p {
+    font-size: 10px;
+  }
+
+  header a {
+    font-size: 12px;
+  }
 }

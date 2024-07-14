@@ -8,9 +8,38 @@ a {
   font-family: "Lora", serif;
   line-height: 1.6;
 }
+
+.center {
+  text-align: center;
+}
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 60px;
+}
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col-first-small {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 30px;
+}
+.img-responsive {
+  max-width: 100%;
+}
+
+.card {
+  background-color: #f0f8ff;
+  padding: 20px;
 }
 
 header {
@@ -25,20 +54,20 @@ header {
 }
 
 header h1 {
-  font-size: 86px;
+  font-size: 96px;
   margin: 0;
   letter-spacing: 4px;
 }
 
 header h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 7px;
   margin: 0;
 }
 
 header h3 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0;
   letter-spacing: 5px;
   font-weight: 400;
@@ -55,6 +84,61 @@ header a {
   font-weight: 500;
   border: none;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background-color: #f0f8ff;
+  padding: 0;
+  margin: 0px auto;
+}
+
+main h2 {
+  text-transform: uppercase;
+  opacity: 0.2;
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+main h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+}
+main h4 {
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main h5 {
+  margin: 0;
+}
+
+main p {
+  margin-top: 20px;
+}
+
+main .secondary {
+  padding: 30px;
+}
+
+section.primary {
+  padding: 30px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
+}
+
+section.secondary h4,
+h5 {
+}
+
+section.secondary a {
+  color: #f0f8ff;
+  text-decoration: none;
 }
 
 footer {
@@ -87,43 +171,6 @@ footer a {
   color: #f0f8ff;
   opacity: 0.7;
   font-size: 16px;
-}
-
-main {
-  background-color: #f0f8ff;
-  padding: 30px;
-  margin: 0px auto;
-}
-
-main h2 {
-  text-transform: uppercase;
-  opacity: 0.4;
-  margin: 0;
-}
-
-main h3 {
-  margin: 0;
-  font-weight: 500;
-}
-
-main p {
-  margin-top: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 60px;
-}
-.grid-2-col {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-col-first-small {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
-.img-responsive {
-  max-width: 100%;
 }
 
 @media (max-width: 960px) {

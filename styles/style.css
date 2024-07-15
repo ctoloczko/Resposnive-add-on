@@ -58,6 +58,15 @@ a {
   margin: 10px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
 .card .button {
   margin-top: auto;
   text-align: center;
@@ -231,5 +240,9 @@ footer a {
 
   main .secondary {
     padding: 0;
+  }
+
+  .card-header img {
+    display: none;
   }
 }

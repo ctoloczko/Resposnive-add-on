@@ -32,14 +32,40 @@ a {
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 30px;
+  grid-gap: 30px;
 }
 .img-responsive {
   max-width: 100%;
 }
 
 .card {
-  background-color: #f0f8ff;
-  padding: 20px;
+  background-color: rgb(221, 221, 221, 0.4);
+  padding: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h4,
+.card h5,
+.card p {
+  margin: 10px;
+}
+
+.card .button {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 header {
@@ -173,7 +199,7 @@ footer a {
   font-size: 16px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 840px) {
   header {
     padding: 100px 0;
   }
